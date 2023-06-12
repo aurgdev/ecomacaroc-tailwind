@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-avo-100 overflow-x-hidden">
+    <!-- desktop Menu -->
+    <header class="container mx-auto">
+      <nav
+        class="flex flex-row items-center justify-between py-6 md:py-8 lg:py-10 px-6"
+      >
+        <a href="index.html">
+          <img
+            src="../assets/logo.png"
+            alt="logo"
+            class="h-auto w-28 sm:w-32"
+          />
+        </a>
+        <div class="hidden sm:flex flex-row items-center justify-center gap-1">
+          <p class="text-xs">Follow us</p>
+          <div class="h-0.5 w-14 bg-gray-300"></div>
+          <div class="inline-flex gap-1">
+            <a href="#">
+              <i class="text-melon fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <button id="menuButton" class="block sm:hidden">
+          <img
+            src="../assets/menu-dots-svgrepo-com.svg"
+            alt="menu"
+            class="h-8"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="fixed z-50 inset-0 bg-avo-400 bg-opacity-95 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto"
+    >
+      <div class="flex flex-col h-full w-64 px-6 py-4">
+        <button id="closeButton" class="self-end mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <!-- Menu content here -->
+      </div>
+    </div>
+
+    <main class="container mx-auto">
+      <!-- hero section -->
+      <section class="my-12 relative">
+        <div>
+          <div class="px-6 text-center">
+            <h1
+              class="text-4xl sm:text-5xl flex flex-col md:flex-row items-center justify-center font-extrabold lg:text-6xl xl:text-7xl"
+            >
+              Two favorites, <span class="">one place</span>
+            </h1>
+            <p class="mt-2 text-gray-500 sm:text-lg md:text-xl lg:text-3xl">
+              Avocados and watermelons at your pace
+            </p>
+          </div>
+          <div
+            class="overflow-hidden relative h-72 md:h-80 xl:h-96 mt-10 md:mt-0"
+          >
+            <img
+              src="../assets/avocado-4.png"
+              alt="image"
+              class="h-full w-full absolute right-20 lg:right-40 top-0 object-contain"
+            />
+            <img
+              src="../assets/watermelon-4.png"
+              alt="image"
+              class="h-full w-full absolute object-contain left-20 lg:left-40 top-0"
+            />
+          </div>
+          <div class="flex items-center flex-col justify-center mt-10">
+            <button
+              class="border-2 lg:border text-sm lg:rounded-md lg:px-14 text-gray-600 rounded-xl border-avo-400 py-3 px-10 hover:bg-avo-400 transition"
+            >
+              Contact us
+            </button>
+            <div class="mt-6 relative block md:hidden">
+              <div class="w-3 rotate-45 rounded h-3 bg-avo-400 mt-1"></div>
+              <div
+                class="w-3 rotate-45 rounded h-3 bg-avo-400 opacity-50 absolute top-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="../assets/watermelon.png"
+            alt="image"
+            class="absolute -top-10 w-1/4 -left-10 sm:-left-20 lg:-left-48 xl:-left-64 blur-md xl:h-1/2 object-contain -z-10"
+          />
+          <img
+            src="../assets/avocado-2.png"
+            alt="image"
+            class="absolute -top-10 w-1/4 -right-10 sm:-right-20 lg:-right-48 xl:-right-5-left-64 blur-md xl:h-1/2 object-contain -z-10"
+          />
+          <img
+            src="../assets/avocado-2.png"
+            alt="image"
+            class="absolute hidden md:block -bottom-10 w-1/4 -left-10 sm:-left-20 lg:-left-48 xl:-left-64 blur-md xl:h-1/2 object-contain -z-10"
+          />
+          <img
+            src="../assets/watermelon.png"
+            alt="image"
+            class="absolute -bottom-10 w-1/4 -right-10 sm:-right-20 lg:-right-48 xl:-right-5-left-64 blur-md xl:h-1/2 object-contain -z-10"
+          />
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section class="">
+        <div
+          class="flex flex-col gap-4 md:flex-row px-6 lg:h-[600px] items-center"
+        >
+          <div class="text-center md:text-start md:w-1/2">
+            <h1
+              class="text-4xl lg:text-5xl font-extrabold text-avo-900 uppercase"
+            >
+              about us
+            </h1>
+            <p class="text-sm mt-5 lg:mt-8 opacity-50 md:pr-10">
+              We’re a Spanish tech company and the fastest- growing multi
+              category player in Europe, Western Asia and Africa. With
+              technology at the core of our business, we create innovative
+              solutions by connecting customers, businesses and couriers, whilst
+              making sure we have a a sustainable impact on our communities and
+              ecosystems: we’re a tech-first, responsible company. We’re a
+              Spanish tech company and the fastest- growing multi category
+              player in Europe, Western Asia and Africa. With technology at the
+              core of our business, we create innovative solutions by connecting
+              customers.
+            </p>
+            <p class="text-4xl italic mt-5 lg:mt-8">signature</p>
+          </div>
+          <div
+            class="md:w-1/2 my-4 md:my-0 flex flex-row gap-4 relative h-full"
+          >
+            <img
+              src="../assets/avocados.jpg"
+              alt="image"
+              class="h-60 sm:h-80 lg:h-auto md:mt-10 lg:mt-20 object-cover w-1/2 rounded-md lg:rounded-xl"
+            />
+            <img
+              src="../assets/watermelons.jpg"
+              alt="image"
+              class="h-60 sm:h-80 lg:h-auto object-cover w-1/2 rounded-md lg:rounded-xl mt-10 md:mb-10 md:mt-0 lg:mb-20"
+            />
+            <img
+              src="../assets/watermelon.png"
+              alt="image"
+              class="absolute -bottom-10 w-1/4 lg:bottom-0 -right-5 blur-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- product section -->
+      <section class="my-20 relative">
+        <div class="text-center px-6 flex flex-col items-center">
+          <h1
+            class="text-4xl lg:text-5xl font-extrabold text-avo-900 uppercase"
+          >
+            our <span class="block">product</span>
+          </h1>
+          <p class="text-sm mt-5 lg:mt-8 opacity-50 lg:w-1/2">
+            We’re a Spanish tech company and the fastest- growing multi category
+            player in Europe, Western Asia and Africa. With technology at the
+            core of our business, we create innovative solutions by connecting
+            customers, businesses and couriers.
+          </p>
+          <div class="mb-4 mt-32">
+            <!-- grid -->
+            <div
+              class="grid gap-36 md:grid-cols-2 lg:grid-cols-3 justify-center"
+            >
+              <div class="bg-avo-300 relative rounded-md py-12 px-2 w-64">
+                <div class="absolute inset-0 -left-4 -right-4 -top-28">
+                  <img
+                    src="../assets/avocado-4.png"
+                    alt="image"
+                    class="w-full h-60 object-contain"
+                  />
+                </div>
+                <h2 class="text-2xl font-extrabold pt-20">zutano</h2>
+                <span class="opacity-75">avocado</span>
+                <p class="text-xs mt-2 opacity-70">
+                  Zutano avocado is a variety of avocado that is known for its
+                  pear-like shape, bright green skin, and rich, buttery flavor
+                </p>
+                <p class="text-sm font-extrabold mt-2">
+                  From September to October
+                </p>
+                <button
+                  class="absolute -bottom-4 right-4 left-4 w-fit mx-auto px-4 py-3 text-white rounded-md text-xs bg-avo-900 hover:bg-avo-400 hover:text-black transition"
+                >
+                  Contact us about this product
+                </button>
+              </div>
+
+              <div class="bg-avo-300 relative rounded-md py-12 px-2 w-64">
+                <div class="absolute inset-0 -left-4 -right-4 -top-28">
+                  <img
+                    src="../assets/avocado-2.png"
+                    alt="image"
+                    class="w-full h-60 object-contain"
+                  />
+                </div>
+                <h2 class="text-2xl font-extrabold pt-20">Bacon</h2>
+                <span class="opacity-75">avocado</span>
+                <p class="text-xs mt-2 opacity-70">
+                  Bacon avocado is a type of avocado that is known for its
+                  unique flavor profile, which is similar to the taste of bacon.
+                </p>
+                <p class="text-sm font-extrabold mt-2">
+                  From October to November
+                </p>
+                <button
+                  class="absolute -bottom-4 right-4 left-4 w-fit mx-auto px-4 py-3 text-white rounded-md text-xs bg-avo-900 hover:bg-avo-400 hover:text-black transition"
+                >
+                  Contact us about this product
+                </button>
+              </div>
+
+              <div class="bg-avo-300 relative rounded-md py-12 px-2 w-64">
+                <div class="absolute inset-0 -left-4 -right-4 -top-28">
+                  <img
+                    src="../assets/avocado-5.png"
+                    alt="image"
+                    class="w-full h-60 object-contain"
+                  />
+                </div>
+                <h2 class="text-2xl font-extrabold pt-20">Fuerte</h2>
+                <span class="opacity-75">avocado</span>
+                <p class="text-xs mt-2 opacity-70">
+                  Fuerte avocado is a variety of avocado that originated in
+                  Mexico and is known for its large size, creamy texture, and
+                  rich, nutty flavor
+                </p>
+                <p class="text-sm font-extrabold mt-2">
+                  From October to February
+                </p>
+                <button
+                  class="absolute -bottom-4 right-4 left-4 w-fit mx-auto px-4 py-3 text-white rounded-md text-xs bg-avo-900 hover:bg-avo-400 hover:text-black transition"
+                >
+                  Contact us about this product
+                </button>
+              </div>
+
+              <div class="bg-avo-300 relative rounded-md py-12 px-2 w-64">
+                <div class="absolute inset-0 -left-4 -right-4 -top-28">
+                  <img
+                    src="../assets/avocado-7.png"
+                    alt="image"
+                    class="w-full h-60 object-contain"
+                  />
+                </div>
+                <h2 class="text-2xl font-extrabold pt-20">Hass</h2>
+                <span class="opacity-75">avocado</span>
+                <p class="text-xs mt-2 opacity-70">
+                  Hass avocado is a popular variety of avocado that is known for
+                  its dark, pebbly skin and creamy, rich flesh.
+                </p>
+                <p class="text-sm font-extrabold mt-2">
+                  From November to April
+                </p>
+                <button
+                  class="absolute -bottom-4 right-4 left-4 w-fit mx-auto px-4 py-3 text-white rounded-md text-xs bg-avo-900 hover:bg-avo-400 hover:text-black transition"
+                >
+                  Contact us about this product
+                </button>
+              </div>
+
+              <div class="bg-avo-300 relative rounded-md py-12 px-2 w-64">
+                <div class="absolute inset-0 -left-4 -right-4 -top-28">
+                  <img
+                    src="../assets/avocado.png"
+                    alt="image"
+                    class="w-full h-60 object-contain"
+                  />
+                </div>
+                <h2 class="text-2xl font-extrabold pt-20">Lamb Hass</h2>
+                <span class="opacity-75">avocado</span>
+                <p class="text-xs mt-2 opacity-70">
+                  Lamb Hass avocado is a less common variety of avocado that is
+                  similar to the popular Hass avocado
+                </p>
+                <p class="text-sm font-extrabold mt-2">From February to May</p>
+                <button
+                  class="absolute -bottom-4 right-4 left-4 w-fit mx-auto px-4 py-3 text-white rounded-md text-xs bg-avo-900 hover:bg-avo-400 hover:text-black transition"
+                >
+                  Contact us about this product
+                </button>
+              </div>
+
+              <div class="bg-avo-300 relative rounded-md py-12 px-2 w-64">
+                <div class="absolute inset-0 -left-4 -right-4 -top-28">
+                  <img
+                    src="../assets/watermelon-2.png"
+                    alt="image"
+                    class="w-full h-60 object-contain"
+                  />
+                </div>
+                <h2 class="text-2xl font-extrabold pt-20">Delta</h2>
+                <span class="opacity-75">watermelon</span>
+                <p class="text-xs mt-2 opacity-70">
+                  Delta watermelon is a popular variety of watermelon that is
+                  named after the region where it was first developed, the
+                  Mississippi Delta.
+                </p>
+                <p class="text-sm font-extrabold mt-2">From April to August</p>
+                <button
+                  class="absolute -bottom-4 right-4 left-4 w-fit mx-auto px-4 py-3 text-white rounded-md text-xs bg-avo-900 hover:bg-avo-400 hover:text-black transition"
+                >
+                  Contact us about this product
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="../assets/watermelon.png"
+            alt="image"
+            class="absolute -top-10 w-1/4 -left-10 sm:-left-20 lg:-left-48 xl:-left-64 blur-md xl:h-1/2 object-contain -z-10"
+          />
+        </div>
+      </section>
+
+      <!-- mission section -->
+      <!-- <section class="relative">
+        <div></div>
+
+        <img
+          src="../assets/watermelon.png"
+          alt="image"
+          class="absolute -top-10 w-1/4 -left-10 blur-sm -z-10"
+        />
+      </section> -->
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
